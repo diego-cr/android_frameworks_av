@@ -7,6 +7,7 @@ cc_library_static {
     ],
 
     include_dirs: [
+	"frameworks/av/media/libstagefright/colorconversion/include",
         "frameworks/native/include/media/openmax",
     ],
 
@@ -17,7 +18,8 @@ cc_library_static {
 
     static_libs: ["libyuv_static"],
 
-    cflags: ["-Werror"],
+    cflags: ["-Werror",
+             "-DMTK_HARDWARE",],
 
     sanitize: {
         misc_undefined: [

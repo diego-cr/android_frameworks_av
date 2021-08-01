@@ -62,6 +62,7 @@ cc_library_shared {
     cflags: [
         "-Werror",
         "-Wall",
+	"-DMTK_CAMERA",
     ],
 
     shared_libs: [
@@ -295,6 +296,7 @@ cc_library {
         "-Werror",
         "-Wno-error=deprecated-declarations",
         "-Wall",
+	"-DMTK_HARDWARE",
     ],
 
     product_variables: {
